@@ -1,0 +1,104 @@
+/* =============================================
+		body Fonts
+============================================= */
+
+main {
+    // opacity: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family            : $primary-font; // -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering         : optimizeLegibility;
+    font-size              : 1rem;
+    // opacity: 0;
+
+    &.is-loaded {
+        overflow-x: hidden;
+        overflow-y: auto;
+        opacity: 1;
+        
+        main {
+            opacity: 1;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+    @include bp('tab') {
+        font-size: 16px;
+    }
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.container {
+    &--1350 {
+        @include bp('desktop-1200'){
+            max-width: 1350px;
+        }
+    }
+}
+
+.op-1 {
+    opacity: 1 !important;
+}
+
+.swiper-slide {
+    transition: transform 1s ease;
+}
+
+.fnt-300 {
+    font-weight: 300 !important;
+}
+
+.fnt-500 {
+    font-weight: 500 !important;
+}
+
+.fnt-700 {
+    font-weight: 700 !important;
+}
+
+.fnt-800 {
+    font-weight: 800 !important;
+}
+
+.fnt-inherit {
+    font-size: inherit !important;
+}
+
+.text-normal {
+    text-transform: initial !important;
+}
+
+.lh-initial {
+    line-height: initial !important;
+}
+
+.mw-420 {
+    max-width: 420px;
+}
+
+.mw-380 {
+    max-width: 380px;
+}
+
+video {
+    &::-webkit-media-controls {
+        display: none !important;
+    }
+
+    &::-webkit-media-controls-overlay-play-button {
+        display: none;
+    }
+
+    &.has-media-controls-hidden::-webkit-media-controls {
+        display: none;
+    }
+}

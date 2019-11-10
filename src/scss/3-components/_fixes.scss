@@ -1,0 +1,41 @@
+html {
+
+    &.old-ie {
+        
+    }
+
+    &.ie-edge12,
+    &.ie-edge {
+    }
+}
+
+html {
+    &.isIphone {
+        .animatewords-headline.rotate-2 .rsu-words-w {
+            margin: 0;
+        }
+        .marketers-heading,
+        .animatewords-headline em {
+            padding: 10px 0;
+        }
+    }
+}
+
+html {
+    &.isIpad {
+        .link {
+            &::after {
+                top: -6px;
+            }
+        }
+
+        .marketers-heading,
+        .animatewords-headline em {
+            padding: 10px 0;
+        }
+
+        .animatewords-headline.rotate-2 .rsu-words-w {
+            margin: 0;
+        }
+    }
+}

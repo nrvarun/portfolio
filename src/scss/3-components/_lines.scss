@@ -1,0 +1,28 @@
+.lines-w {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 1px solid #edeee5;
+    opacity: 0.2;
+}
+
+// loops through 100 times
+@for $i from 0 through 6 {
+
+    // for each $col_#{i} 
+    .#{line--}#{$i} {
+
+      left: $i*14.28%;
+    }
+}

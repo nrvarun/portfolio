@@ -1,0 +1,31 @@
+//header stylings
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 20px;
+
+    @include bp('tab') {
+        padding: 30px 50px;
+    }
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+
+    li {
+        margin: 0 15px 0 0;
+
+        @include bp('tab') {
+            margin: 0 30px 0 0;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

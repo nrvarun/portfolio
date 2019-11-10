@@ -1,0 +1,118 @@
+.content {
+    max-width: 80%;
+
+    @media (min-width: 375px) {
+        max-width: 70%;
+    }
+
+    @media (min-width: 560px) {
+        max-width: 60%;
+    }
+
+    @media (min-width: 660px) {
+        max-width: 50%;
+    }
+    
+    @include bp('tab') {
+        max-width: 50%;
+    }
+    
+    @include bp('desktop') {
+        max-width: 410px;
+    }
+
+    &__heading{
+        color: #333333;
+        margin: 0;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $primary-font;
+        
+        @include bp('tab') {
+            font-size: 60px;
+        }
+        
+        @include bp('desktop') {
+            font-size: 80px;
+        }
+    }
+
+    &__subheading {
+        color: #999999;
+        font-family: $lato;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: absolute;
+        right: 60px;
+        bottom: -10px;
+
+        &::before {
+            position: absolute;
+            top: -15px;
+            height: 10px;
+            left: 50%;
+            width: 2.5px;
+            content: '';
+            background-color: #d19e66;
+
+            @include bp('tab') {
+                left: 45px;
+                width: 5px;
+            }
+
+            @include bp('desktop') {
+                left: 12.5px;
+            }
+        }
+        
+        &::after {
+            position: absolute;
+            top: -15px;
+            height: 10px;
+            left: 50%;
+            width: 2.5px;
+            margin: 0 0 0 2.5px;
+            content: '';
+            background-color: #bac371;
+            
+            @include bp('tab') {
+                left: 45px;
+                width: 5px;
+                margin: 0 0 0 5px;
+            }
+            
+            @include bp('desktop') {
+                left: 10px;
+                margin: 0 0 0 8px;
+            }
+        }
+
+        @media (min-width: 375px) {
+            right: 25px;
+        }
+        
+        @include bp('tab') {
+            right: 90px;
+            bottom: -5px;
+        }
+        
+        @include bp('desktop') {
+            right: 15px;
+            bottom: -5px;
+        }
+    }
+
+    &__desc {
+        color: #666666;
+        font-family: $lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
