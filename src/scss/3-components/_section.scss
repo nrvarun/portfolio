@@ -1,17 +1,10 @@
 .section {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    // &--home {
-    //     @include bp('tab') {
-    //         justify-content: flex-start;
-    //         padding: 0 150px;
-    //     }
-        
-    //     @include bp('desktop') {
-    //         padding: 0 200px;
-    //     }
-    // }
+
+    @include bp('tab') {
+        height: 100vh;
+    }
 }
