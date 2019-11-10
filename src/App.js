@@ -14,7 +14,7 @@ function App() {
         <Content
           heading="VARUN NR"
           subheading="Front-end Developer"
-          desc="London based frontend developer and designer aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis."
+          desc="Bengaluru based frontend Dev with a love for UX and a curious guy fascinated by the endless possibilites of the Web!"
         />
       </section>
       <Footer/>
