@@ -1,24 +1,25 @@
-import React from 'react';
+import React from "react";
 
-import Header from './components/header/index';
-import Content from './components/content';
-import Footer from './components/footer';
-import Lines from './components/lines';
+import { Router, Switch, Route, Redirect } from "react-router-dom";
+import history from "./history";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
 
 function App() {
   return (
-    <main>
-      <Lines/>
-      <Header/>
-      <section className="section section--home">
-        <Content
-          heading="VARUN NR"
-          subheading="Front-end Developer"
-          desc="Bengaluru based frontend Dev with a love for UX and a curious guy fascinated by the endless possibilites of the Web!"
+    <Router history={history}>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route
+          path="*"
+          render={() => {
+            return <Redirect to="/" />;
+          }}
         />
-      </section>
-      <Footer/>
-    </main>
+      </Switch>
+    </Router>
   );
 }
 
