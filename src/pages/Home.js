@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import Lines from "../components/Lines";
+import Header from "../components/global/Header";
+import Footer from "../components/global/Footer";
+import Lines from "../components/global/Lines";
 
 import Home from "../components/Home";
 
