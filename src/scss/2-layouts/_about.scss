@@ -1,8 +1,13 @@
 .about-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80%;
-  margin: 40px auto 0 auto;
-  transform: translate(-50%, -50%);
+  width: 70%;
+  margin: 0% auto 0 auto;
+
+  @media (min-width: 767px) {
+    margin: 40px auto 0 auto;
+  }
+
+  @media (min-width: 992px) {
+    width: 40%;
+    margin: 40px auto 0 auto;
+  }
 }

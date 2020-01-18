@@ -1,11 +1,17 @@
 .section {
-  height: 85vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 -15px 0 0;
 
   @include bp("tab") {
-    height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
+  }
+
+  &--projects {
+    position: relative;
   }
 }
